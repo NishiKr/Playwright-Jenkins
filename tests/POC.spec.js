@@ -27,7 +27,7 @@ test('Ecommerce', async ({ page }) => {
   await basePage.titleTextToBeVisible("Products");
   await homePage.addToCart("Sauce Labs Backpack");
   await homePage.addToCart("Sauce Labs Bike Light");
-  await homePage.verifyCartItemsAreInTotal("1");
+  await homePage.verifyCartItemsAreInTotal("2");
   await homePage.clickCart();
 
   await basePage.titleTextToBeVisible("Your Cart");
