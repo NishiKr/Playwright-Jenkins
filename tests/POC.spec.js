@@ -25,7 +25,7 @@ test('Ecommerce', async ({ page }) => {
   await loginPage.clickLoginBtn();
 
   await basePage.titleTextToBeVisible("Products");
-  await homePage.addToCart("Sauce L333abs Backpack");
+  await homePage.addToCart("Sauce Labs Backpack");
   await homePage.addToCart("Sauce Labs Bike Light");
   await homePage.verifyCartItemsAreInTotal("2");
   await homePage.clickCart();
